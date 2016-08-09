@@ -30,10 +30,32 @@ printf("\n");
 			}			
 		
 		}
-		for(l=10;l>i;l--){if(i==1&&l==3)
-					{printf("$");}
-					else
-					{printf("*");}}printf("\n");}for(l=0;l<2;l++)
-	{for(p=0;p<9;p++)
-		{printf(" ");}printf("***\n");
-	}printf("Merry Christmas\n");}
+		for(l=10;l>i;l--)
+			{
+			switch(l) {  
+				 case 8:
+				 	if(i==9||i==3||i==8){printf("$");break;}
+				 	else
+				  	printf("*");
+				  	break;
+				  case 5:
+				  	printf("^");
+				  	break;
+				 case 3:
+				  	printf("@");
+				  	break;
+				  default:
+			  	printf("*");
+			}
+			}printf("\n");
+			}
+for(l=0;l<2;l++)
+{
+	for(p=0;p<9;p++)
+	{
+		printf(" ");
+	}printf("***\n");
+}
+
+	printf("Merry Christmas\n");
+}
